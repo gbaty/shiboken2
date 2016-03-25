@@ -394,6 +394,8 @@ void CppGenerator::generateClass(QTextStream &s, const AbstractMetaClass *metaCl
         foreach (const AbstractMetaField* metaField, metaClass->fields()) {
             if (metaField->isStatic())
                 continue;
+            if(metaField->enclosingClass()->isNamespace())
+                continue;
             writeGetterFunction(s, metaField);
             if (!metaField->type()->isConstant())
                 writeSetterFunction(s, metaField);
@@ -404,6 +406,8 @@ void CppGenerator::generateClass(QTextStream &s, const AbstractMetaClass *metaCl
         s << "static PyGetSetDef " << cpythonGettersSettersDefinitionName(metaClass) << "[] = {" << endl;
         foreach (const AbstractMetaField* metaField, metaClass->fields()) {
             if (metaField->isStatic())
+                continue;
+            if (metaField->enclosingClass()->isNamespace())
                 continue;
 
             bool hasSetter = !metaField->type()->isConstant();

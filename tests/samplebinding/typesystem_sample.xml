@@ -2400,6 +2400,9 @@
         <modify-function signature="dummy(std::list&lt;std::pair&lt;BlackBox *, BlackBox *&gt; &gt; &amp;)" rename="dummy_method" />
     </object-type>
 
+    <!-- check BUG: shiboken2: https://github.com/PySide/shiboken2/issues/36 - shiboken1: https://bugreports.qt.io/browse/PYSIDE-186 -->
+    <namespace-type name="NamespaceConstant" generate="yes" />
+
     <suppress-warning text="horribly broken type '__off64_t'" />
     <suppress-warning text="enum '__codecvt_result' does not have a type entry or is not an enum" />
     <suppress-warning text="Pure virtual method &quot;Abstract::hideFunction(HideType*)&quot; must be implement but was completely removed on typesystem." />

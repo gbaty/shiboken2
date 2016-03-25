@@ -46,6 +46,7 @@ ${CMAKE_CURRENT_BINARY_DIR}/sample/mderived5_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/sample/modelindex_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/sample/modifications_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/sample/modifiedconstructor_wrapper.cpp
+${CMAKE_CURRENT_BINARY_DIR}/sample/namespaceconstant_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/sample/noimplicitconversion_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/sample/nondefaultctor_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/sample/objectmodel_wrapper.cpp

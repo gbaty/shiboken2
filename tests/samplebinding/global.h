@@ -10,6 +10,7 @@
 #include "derived.h"
 #include "echo.h"
 #include "functions.h"
+#include "constants.h"
 #include "implicitconv.h"
 #include "overloadsort.h"
 #include "handle.h"
